@@ -30,7 +30,14 @@
         Terima kasih telah bekerja sama dengan AmanMedia.
         Silahkan lengkapi formulir di bawah ini untuk memberikan umpan balik Anda.
       </p>
+      <form name = "feedbackForm" data-netlify="true" hidden>
+        <input type = "text" name ="name">
+        <input type = "email" name ="email">
+        <input type = "text" name ="project">
+        <textarea name ="message"></textarea>
+      </form>
 
+        <input type ="hidden" name="form-name" value="feedbackForm">
       <form name ="feedbackForm" method = "post" data-netlify="true">
         <input type ="hidden" name="form-name" value="feedbackForm">
 <div class="form-group">
