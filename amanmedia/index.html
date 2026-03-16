@@ -34,6 +34,11 @@
         <input type = "text" name ="name">
         <input type = "email" name ="email">
         <input type = "text" name ="project">
+        <input type="radio" name="rating" value="5">
+        <input type="radio" name="rating" value="4">
+        <input type="radio" name="rating" value="3">
+        <input type="radio" name="rating" value="2">
+        <input type="radio" name="rating" value="1">
         <textarea name ="message"></textarea>
       </form>
 
@@ -45,7 +50,7 @@
     <span class="material-symbols-outlined label-icon">person</span>
     Nama Lengkap
   </label>
-  <input type="text" placeholder="Masukkan nama lengkap">
+  <input type="text" placeholder="Masukkan nama lengkap" name="name">
 </div>
 
 <div class="form-group">
@@ -53,7 +58,7 @@
     <span class="material-symbols-outlined label-icon">mail</span>
     Email
   </label>
-  <input type="email" placeholder="nama@email.com">
+  <input type="email" placeholder="nama@email.com" name="email">
 </div>
 
 <div class="form-group">
@@ -61,18 +66,29 @@
     <span class="material-symbols-outlined label-icon">work</span>
     Nama Proyek
   </label>
-  <input type="text" placeholder="Contoh: Website Redesign">
+  <input type="text" placeholder="Contoh: Website Redesign" name="project">
 </div>
 
 <div class="form-group">
   <label>Tingkat Kepuasan</label>
-  <div class="rating" id="rating">
-    <span class="star active" data-value="1">★</span>
-    <span class="star active" data-value="2">★</span>
-    <span class="star active" data-value="3">★</span>
-    <span class="star active" data-value="4">★</span>
-    <span class="star" data-value="5">★</span>
-    <span class="rating-text" id="ratingText">(4/5) Sangat Puas</span>
+
+  <div class="rating">
+
+    <input type="radio" name="rating" id="star5" value="5">
+    <label for="star5">★</label>
+
+    <input type="radio" name="rating" id="star4" value="4">
+    <label for="star4">★</label>
+
+    <input type="radio" name="rating" id="star3" value="3">
+    <label for="star3">★</label>
+
+    <input type="radio" name="rating" id="star2" value="2">
+    <label for="star2">★</label>
+
+    <input type="radio" name="rating" id="star1" value="1">
+    <label for="star1">★</label>
+
   </div>
 </div>
 
@@ -81,7 +97,7 @@
     <span class="material-symbols-outlined label-icon">chat</span>
     Pesan / Testimoni
   </label>
-  <textarea placeholder="Ceritakan pengalaman Anda bekerja sama dengan kami..."></textarea>
+  <textarea placeholder="Ceritakan pengalaman Anda bekerja sama dengan kami..." name="message"></textarea>
 </div>
 
       <button class="btn">Kirim Testimoni</button>
